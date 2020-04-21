@@ -42,9 +42,9 @@
     (= :__ (dissoc {1 "January" 2 "February"} 2))
 
     "Often you will need to get the keys, but the order is undependable"
-    (= (list :__)
+    (= (list :__ :__ :__)
        (sort (keys {2010 "Vancouver" 2014 "Sochi" 2006 "Torino"})))
 
     "You can get the values in a similar way"
-    (= (list :__)
+    (= (list :__ :__ :__)
        (sort (vals {2006 "Torino" 2010 "Vancouver" 2014 "Sochi"})))))
