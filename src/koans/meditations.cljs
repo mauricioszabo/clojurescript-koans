@@ -2,11 +2,11 @@
   (:require
     [clojure.string]
     [koans.utils :as utils]
-    [koans.meditations.equality :as equality]))
-    ; [koans.meditations.lists :as lists]
-    ; [koans.meditations.vectors :as vectors]
-    ; [koans.meditations.sets :as sets]
-    ; [koans.meditations.maps :as maps]
+    [koans.meditations.equality :as equality]
+    [koans.meditations.lists :as lists]
+    [koans.meditations.vectors :as vectors]
+    [koans.meditations.sets :as sets]
+    [koans.meditations.maps :as maps]))
     ; [koans.meditations.functions :as functions]
     ; [koans.meditations.conditionals :as conditionals]
     ; [koans.meditations.higher-order-functions :as higher-order-functions]
@@ -25,11 +25,11 @@
 (defrecord Category [name koans fns])
 
 (def categories
-  [(Category. "equality" equality/koans [])])
-;    (Category. "lists" lists/koans)
-;    (Category. "vectors" vectors/koans)
-;    (Category. "sets" sets/koans)
-;    (Category. "maps" maps/koans)
+  [(Category. "equality" equality/koans [])
+   (Category. "lists" lists/koans [])
+   (Category. "vectors" vectors/koans [])
+   (Category. "sets" sets/koans [])
+   (Category. "maps" maps/koans [])])
 ;    (Category. "functions" functions/koans functions/fns)
 ;    (Category. "conditionals" conditionals/koans conditionals/fns)
 ;    (Category. "higher-order-functions" higher-order-functions/koans)
